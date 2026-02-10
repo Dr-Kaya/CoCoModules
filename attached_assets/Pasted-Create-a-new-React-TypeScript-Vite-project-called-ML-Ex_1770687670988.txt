@@ -1,0 +1,48 @@
+Create a new React + TypeScript + Vite project called "ML Explorer" — an interactive educational app that teaches elementary students (grades 3–5) machine learning concepts through 6 hands-on modules.
+
+Tech stack:
+- React 18 + TypeScript + Vite
+- Tailwind CSS for styling
+- Framer Motion for animations
+- React Router v6 for routing
+- Zustand with persist middleware for state management
+- lucide-react for icons
+
+Create the Home Hub page at route "/" that shows:
+1. A colorful header with the title "ML Explorer" and subtitle "Interactive Machine Learning for Young Minds"
+2. A friendly robot mascot (use an SVG robot character with expressive eyes — make it cute and kid-friendly, similar to the Sporty Bot character style)
+3. A grid of 6 module cards, each with:
+   - A number (1–6)
+   - An emoji icon
+   - A title
+   - A short description
+   - A colored border/gradient
+   - A "Start" button that routes to the module
+   - A completion star badge (hidden until completed)
+
+The 6 modules are:
+1. 🏷️ "Teach the Sorting Robot" — Learn about training data and labeling
+2. 👍 "Thumbs Up or Down?" — Binary classification with your webcam
+3. ✊ "Rock-Paper-Scissors AI" — Multiclass classification
+4. 🔍 "The Data Detective" — Discover why bigger data is better
+5. 🧪 "Test Your Robot's Brain" — Model testing and evaluation
+6. 🗺️ "My ML Adventure" — The complete ML lifecycle
+
+Design guidelines:
+- Use bright, kid-friendly colors (blues, purples, greens, oranges)
+- Rounded corners everywhere (rounded-2xl)
+- Large text (min 16px body)
+- Large clickable areas (min 44px touch targets)
+- Fun gradient backgrounds
+- Bouncy hover animations on cards
+
+Create a Zustand store (src/stores/progressStore.ts) that tracks:
+- Which modules are completed
+- Current module in progress
+- Total badges earned
+
+Set up React Router with lazy loading for each module route:
+- /module/1 through /module/6
+- Each module route loads a placeholder component for now
+
+Make sure the app looks polished and fun — this is for kids!

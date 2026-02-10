@@ -1,0 +1,34 @@
+Build Module 1: "Teach the Sorting Robot" at route /module/1
+
+This module teaches kids that computers need human-labeled examples to learn. There is NO machine learning model in this module — it's purely about the concept of labeling data.
+
+Screens/Steps:
+1. INTRO: The robot mascot says "I just arrived from Robot Planet and I don't know what anything is! Can you teach me by sorting things into the right groups?" Show a big "Let's Sort!" button.
+
+2. SORTING ACTIVITY: 
+   - Show 3 labeled bins at the bottom: "🐾 Animals", "🍕 Food", "🧸 Toys"
+   - Display one item at a time at the top (use colorful emoji representations): 
+     Items: 🐱 Cat, 🍎 Apple, 🚗 Toy Car, 🐕 Dog, 🍕 Pizza, 🧸 Teddy Bear, 🐸 Frog, 🍪 Cookie, ⚽ Ball, 🐴 Horse (this one is ambiguous!)
+   - Students click on a bin OR drag the item to sort it
+   - After each sort: the robot reacts (happy bounce + "I learned that a Cat is an Animal!" or "Hmm interesting, you think a Horse is an Animal!")
+   - Progress bar shows items sorted: "3/10 items labeled"
+   - For the ambiguous item (Horse — could be animal or toy), accept any answer and show: "Interesting! Different people might label this differently. That's why labeling is important!"
+
+3. QUICK CHECK QUIZ:
+   - "Why does the robot need YOU to sort things?" → Multiple choice:
+     a) "The robot already knows everything" 
+     b) "Robots learn from examples that humans label" ✅
+     c) "Robots don't actually learn"
+   - Show encouraging feedback regardless of answer
+
+4. SELF-REGULATED CHECK:
+   - "How well do you understand data labeling?" → 3 emoji options: 😟 Still learning, 😐 Getting it, 😄 I get it!
+
+5. COMPLETION:
+   - Celebration animation (confetti or stars)
+   - Robot says "Thank you! Now I know about Animals, Food, and Toys because YOU taught me with labeled examples!"
+   - Key takeaway card: "🌟 Machines need humans to label data before they can learn!"
+   - "Back to Home" button
+   - Mark module as complete in Zustand store
+
+Design: Match the Sporty Bot reference app style — use the same pattern of screens with transitions, a mascot character with speech bubbles, colorful cards, and progress indicators. Use Framer Motion for smooth page transitions (slide in from right, exit to left).

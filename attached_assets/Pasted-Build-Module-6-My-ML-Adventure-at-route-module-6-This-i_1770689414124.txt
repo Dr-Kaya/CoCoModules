@@ -1,0 +1,68 @@
+Build Module 6: "My ML Adventure" at route /module/6
+
+This is the capstone module where students go through the complete ML lifecycle on a problem THEY choose.
+
+Screens/Steps:
+1. INTRO: Robot with a map and backpack 🗺️ says "You've learned so much! Now let's go on a complete ML Adventure — from start to finish, with a problem YOU choose!" Button: "Start My Adventure!"
+
+2. JOURNEY MAP:
+   - Show a visual path/map with 5 stops (think board game or treasure map):
+     📦 Collect → 🏷️ Label → 🧠 Train → 🔍 Test → 🔧 Improve
+   - Each stop lights up as the student reaches it
+   - Current position shown with the robot character walking along the path
+
+3. STOP 1 — CHOOSE YOUR PROBLEM:
+   - "What do you want to teach the AI to recognize?"
+   - Suggestions (clickable cards):
+     a) "Different facial expressions 😀😢😮"
+     b) "Hand signals (peace, wave, point) ✌️👋👆"
+     c) "Objects on my desk (pen, book, cup) 🖊️📚☕"
+     d) "Make your own! ___" (text input for custom label names)
+   - Student picks their problem and names 2-3 classes
+   - Lab notebook entry: "My ML problem: Teaching the AI to recognize ___"
+
+4. STOP 2 — COLLECT & LABEL:
+   - Webcam capture for each class they chose
+   - Minimum 15 images per class
+   - Lab notebook auto-records: "I collected ___ training examples"
+   - Robot: "Remember what we learned: more data = better learning!"
+
+5. STOP 3 — TRAIN:
+   - Big "Train!" button
+   - Animated training visualization showing the model learning
+   - After training: "Training complete! Let's see how the AI did..."
+   - Lab notebook: "Training complete with ___ total examples"
+
+6. STOP 4 — TEST (First Round):
+   - Test with 6 new webcam images (2 per class)
+   - Show accuracy result
+   - Lab notebook: "First test accuracy: ___%"
+   - Robot: "How did it do? Want to try to improve it?"
+
+7. STOP 5 — IMPROVE:
+   - Show the accuracy from the test
+   - Ask: "What could make the model better?" → Multiple choice:
+     a) "Add more training data" ✅
+     b) "Test it again with the same data"
+     c) "Just hope it gets better"
+   - Loop back: Capture 10-15 more images, retrain, retest
+   - Show before vs after accuracy comparison
+   - Lab notebook: "After improvement: ___%"
+   - If accuracy improved: celebration! If not: "Sometimes ML needs several rounds of improvement. That's normal!"
+
+8. COMPLETED JOURNEY:
+   - Show the full map with all stops lit up
+   - Lab notebook summary: all entries displayed as a mini-report
+   - ML Lifecycle summary: "You just completed the FULL machine learning lifecycle!"
+   - Final reflection:
+     - "What was the hardest part?" (emoji selection)
+     - "What would you do differently next time?" (text or emoji)
+     - "Rate your ML journey: ⭐⭐⭐⭐⭐"
+   - Certificate of completion: "ML Explorer Certificate — [Student Name] has completed the Machine Learning Adventure!" with date
+   - Screenshot/download option for the certificate
+
+9. COMPLETION with a SPECIAL golden badge (different from other modules).
+
+After completing all 6 modules, show a celebration on the Home Hub: "🎉 CONGRATULATIONS! You've completed ML Explorer! You're now an ML Expert!" with a final mega-certificate option.
+
+Make the journey map the visual centerpiece — it should be an actual illustrated path with the robot walking to each stop, with animations as each stop is completed. Think of a Mario-style world map or a treasure hunt.

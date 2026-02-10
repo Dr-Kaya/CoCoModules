@@ -1,0 +1,51 @@
+Build Module 5: "Test Your Robot's Brain" at route /module/5
+
+This module teaches the critical difference between training data and testing data, and introduces the concept of model evaluation.
+
+Screens/Steps:
+1. INTRO: Robot wearing a lab coat 🥼 says "Welcome to the Testing Lab! Let's see if the AI REALLY learned, or if it just memorized the answers..." Button: "Enter the Lab!"
+
+2. TRAINING PHASE:
+   - Quick training session: 3 classes (e.g., 3 different objects held up to camera, or 3 hand shapes)
+   - Capture 15 images per class
+   - Train the model
+   - Label this phase clearly: "📦 TRAINING PHASE — Teaching the AI"
+   - Show a visual barrier/transition: "🔒 Training complete! Now sealing the training data..."
+
+3. KEY CONCEPT — TRAIN VS TEST:
+   - Animated explanation screen:
+   - Left side (blue): "TRAINING DATA 📦 — What the AI learned from" (show training images)
+   - Right side (green): "TESTING DATA 🧪 — NEW images the AI has never seen" (show question marks)
+   - Robot explains: "A good test uses NEW examples the AI hasn't seen before. Just like a school test uses new questions, not the exact homework problems!"
+   - Quick check: "Why do we test with NEW images?" →
+     a) "To see if the AI really understood the patterns" ✅
+     b) "Because old images are boring"
+     c) "We ran out of training images"
+
+4. TESTING LAB:
+   - Show the webcam feed
+   - Instructions: "Show the AI NEW examples of each class. Try different angles and distances!"
+   - For each test image:
+     - Student holds up an object/gesture → FIRST student makes their prediction: "What do YOU think the AI will say?" (3 class buttons)
+     - THEN reveal AI's prediction with confidence bar
+     - Mark as ✅ Correct or ❌ Wrong
+   - Test 12 images total (4 per class)
+   - Keep a running scoreboard
+
+5. RESULTS — SIMPLIFIED CONFUSION MATRIX:
+   - Instead of a real confusion matrix, show a kid-friendly version:
+   - "Report Card for the AI 📋"
+   - For each class: "The AI got ✊ Rock right 3 out of 4 times!"
+   - "The AI got confused between ✋ Paper and ✌️ Scissors 2 times"
+   - Visual: Color-coded grid with happy/sad robot faces
+   - Overall accuracy prominently displayed
+
+6. REFLECTION:
+   - "What surprised you about the testing results?"
+   - Emoji selection: 🤯 "The AI did better than expected!" / 😮 "The AI made mistakes I didn't expect" / 🤔 "It was about what I expected"
+   - "How is testing an AI similar to testing at school?" → open reflection
+   - Key takeaway: "🌟 Testing with NEW data shows if the AI truly learned patterns — not just memorized answers!"
+
+7. COMPLETION with badge.
+
+Design the "Training Phase" and "Testing Lab" to look and feel VERY different (different background colors, different UI frames) to reinforce that these are separate, distinct phases. This is the most important pedagogical point in the module.

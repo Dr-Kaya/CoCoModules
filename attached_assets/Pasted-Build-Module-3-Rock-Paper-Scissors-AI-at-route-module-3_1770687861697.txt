@@ -1,0 +1,44 @@
+Build Module 3: "Rock-Paper-Scissors AI" at route /module/3
+
+This module extends binary classification to 3+ classes and makes it a game.
+
+Screens/Steps:
+1. INTRO: Robot says "Let's play Rock-Paper-Scissors! But first, you'll need to teach me what each hand gesture looks like." Button: "Let's Play!"
+
+2. DATA COLLECTION (similar to Module 2 but with 3 classes):
+   - Three panels: ✊ Rock, ✋ Paper, ✌️ Scissors
+   - Webcam in center with "Capture for Rock/Paper/Scissors" buttons
+   - Minimum 8 images per class
+   - Show capture count for each class with colored progress rings
+   - Robot: "Make sure to move your hand around! I need to see different angles."
+   - ML Tip: "🧠 With 3 categories instead of 2, the AI needs MORE examples per category to learn well!"
+
+3. TRAINING:
+   - Same training flow as Module 2 but with ml5 imageClassifier with numLabels: 3
+   - Training animation with 3-class visualization
+
+4. GAME MODE:
+   - Split screen: Left = "Your Move" (webcam), Right = "AI's Move" (random choice with emoji)
+   - Countdown: "3... 2... 1... SHOW!" with fun animation
+   - Student shows their gesture → AI classifies it → AI simultaneously picks random move
+   - Compare and show result: "You WIN! 🎉" / "AI WINS! 🤖" / "TIE! 🤝"
+   - Scoreboard: "You: 3 | AI: 2 | Ties: 1"
+   - Best of 5 rounds
+   - Robot reactions: celebrates student wins, looks determined after AI wins
+
+5. EXTENSION (Optional — shown after game):
+   - "CHALLENGE MODE: Add a 4th gesture! 🖖"
+   - Let students capture a new gesture (like Lizard or Spock from Big Bang Theory, or just a peace sign)
+   - Retrain with 4 classes
+   - Show how accuracy might drop: "See? With more categories, the AI needs even more data!"
+
+6. REFLECTION:
+   - "What was different about training with 3 classes vs 2?" → multiple choice
+     a) "Nothing different"
+     b) "Needed more examples for each class" ✅
+     c) "It was easier"
+   - Key takeaway: "🌟 Going from 2 to 3+ categories is called multiclass classification. More classes = more data needed!"
+
+7. COMPLETION with badge and return to Home Hub.
+
+Make the game mode really fun and engaging — big animations, sound effects (optional), exciting transitions. This should feel like an arcade game that also teaches ML.

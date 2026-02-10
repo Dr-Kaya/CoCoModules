@@ -1,0 +1,56 @@
+Build Module 4: "The Data Detective" at route /module/4
+
+This module demonstrates that more training data improves model accuracy through direct comparison.
+
+Screens/Steps:
+1. INTRO: Robot Detective 🔍 says "I have a mystery to solve: does having MORE clues (data) help me learn better? Let's investigate!" Button: "Start Investigation!"
+
+2. ROUND 1 — TINY DATASET (5 examples per class):
+   - Use the webcam to train a simple binary classifier (e.g., open hand vs. closed fist)
+   - LIMIT to exactly 5 captures per class (button disables after 5)
+   - Big counter: "Evidence Collected: 5 per category"
+   - Train the model
+   - Test with 10 predictions, record accuracy
+   - Show result: "Round 1 Accuracy: ~55-65%" (show as a detective's evidence board)
+   - Robot: "Hmm, the AI made some mistakes. Let's collect MORE evidence!"
+
+3. PREDICTION CHECKPOINT:
+   - "What do you think will happen if we give the AI 4x more examples?"
+   - Options: 📈 Better, 📉 Worse, ➡️ Same
+   - Record their prediction (no right/wrong feedback yet)
+
+4. ROUND 2 — MEDIUM DATASET (20 examples per class):
+   - Same categories, but capture 20 images per class
+   - "Evidence Collected: 20 per category"
+   - Train and test → show accuracy: ~75-85%
+   - Animated comparison chart: Round 1 (5 examples, 60%) vs Round 2 (20 examples, 80%)
+   - Robot: "Getting better! But what if we had even MORE?"
+
+5. ROUND 3 — BIG DATASET (50 examples per class):
+   - Capture 50 images per class (show encouraging messages to keep going)
+   - "Evidence Collected: 50 per category"
+   - Train and test → show accuracy: ~90-95%
+   - BIG animated chart showing all 3 rounds climbing
+   - Celebration animation!
+
+6. RESULTS DASHBOARD:
+   - Side-by-side bar chart:
+     | Round | Examples | Accuracy |
+     |-------|----------|----------|
+     |   1   |    5     |   60%    |
+     |   2   |   20     |   80%    |
+     |   3   |   50     |   92%    |
+   - Animated climbing chart (use recharts or a custom SVG animation)
+   - "Was your prediction correct?" → Show their Round 2 prediction vs actual result
+   - Key insight highlight: "📊 More data = better learning! Going from 5 to 50 examples improved accuracy by 30%!"
+
+7. REFLECTION:
+   - "Why does more data help the AI learn better?" →
+     a) "More data means the AI sees more variety and patterns" ✅
+     b) "The AI just memorizes everything"  
+     c) "Data doesn't actually matter"
+   - Key takeaway: "🌟 Just like you learn better with more practice, AI learns better with more examples!"
+
+8. COMPLETION with badge.
+
+IMPORTANT: The accuracy numbers should feel real. Use ml5.js actual training/testing. If accuracy doesn't vary enough between rounds, simulate slight randomness to make the trend clear. The chart animation is the star of this module — make it beautiful and satisfying to watch.
